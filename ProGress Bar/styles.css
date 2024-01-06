@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Progress Bar Container Styles */
+  .progress-bar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #ddd;
+    overflow: hidden;
+  }
+  
+  /* Progress Bar Styles */
+  .progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* Content Area Styles */
+  .content {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  /* Box Styles */
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  /* Hide Scrollbar */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
