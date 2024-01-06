@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(241, 227, 227);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    border: 1px solid #ccc;
+    overflow: hidden;
+  }
+  
+  .canvas {
+    flex: 2;
+    padding: 20px;
+    overflow-y: auto;
+    width: 100%; 
+  height: 100%;
+  border: 2px solid green; 
+
+  }
+  
+  .controls {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+  
+  .control-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  .text-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(31, 194, 31);
+    color: rgb(238, 234, 226);
+    border-radius: 3px;
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+  }
+  
+  .history-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  select, input {
+    margin: 5px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+
+  .draggable-text {
+    position: absolute;
+    cursor: grab;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(206, 234, 206, 0.659);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

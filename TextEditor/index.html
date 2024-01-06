@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text Editor</title>
+  <!-- <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.6.2/fabric.min.js">
+</script> -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+  
+  <div class="container">
+    <!-- <div class="canvas" id="canvas" ondrop="drop(event)" ondragover="allowDrop(event)">
+    
+    </div> -->
+    <div class="canvas" id="canvas">
+    
+    </div>
+   
+ 
+    
+    <div class="controls">
+      <div class="history-controls">
+        <div class="control-group">
+          <button onclick="undo()"><i class="fa-solid fa-rotate-left"></i>Undo</button>
+          <button onclick="redo()">Redo<i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+      </div>
+      <div class="text-controls">
+        <div class="control-group">
+          <button onclick="boldText()"><i class="fa-solid fa-bold"></i></button>
+          <button onclick="italicizeText()"><i class="fa-solid fa-italic"></i></button>
+          <button onclick="underlineText()"><i class="fa-solid fa-underline"></i></button>
+        </div>
+      </div>
+      <div class="font-size-controls">
+        <div class="control-group">
+          <input type="color" id="textColor" onchange="changeTextColor(this.value)">
+          <select id="fontSize" onchange="changeFontSize(this.value)">
+            <option value="4px">4</option>
+            <option value="8px">8</option>
+            <option value="10px">10</option>
+            <option value="12px">12</option>
+            <option value="16px">16</option>
+            <option value="20px">20</option>
+            <option value="20px">20</option>
+
+          </select>
+        </div>
+      </div>
+      <div class="font-family-controls">
+        <div class="control-group">
+          <select id="fontFamily" onchange="changeFontFamily(this.value)">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Garamond">Garamond</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Courier New">Courier New</option>
+            <option value="cursive">Cursive</option>
+          </select>
+        </div>
+      </div>
+      <div class="add-text-controls">
+        <div class="control-group">
+          <button onclick="addText()">Add Text</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  
+  
+</body>
+</html>
