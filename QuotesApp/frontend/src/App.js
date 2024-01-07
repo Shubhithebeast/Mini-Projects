@@ -10,8 +10,10 @@ const  App=() =>{
     const getRandomQuote = async () => {
         try {
             const response = await axios.get('http://localhost:5000/api/random');
-            console.log(response.data);
+            // console.log(response.data);
             const {a:author, q:text} = response.data[0];
+
+            await axios.post('http://localhost:5000/api/addQuote',{author,text});
             setQuote({author,text});
         } catch (error) {  
             console.error(error);
