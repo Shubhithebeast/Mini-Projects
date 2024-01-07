@@ -3,16 +3,17 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css'; // Import the CSS file
 
-function App() {
+const  App=() =>{
     const [quote, setQuote] = useState({ text: '', author: '' });
     const [searchAuthor, setSearchAuthor] = useState('');
 
     const getRandomQuote = async () => {
         try {
             const response = await axios.get('http://localhost:5000/api/random');
-            // console.log(response.data);
-            setQuote(response.data);
-        } catch (error) {
+            console.log(response.data);
+            const {a:author, q:text} = response.data[0];
+            setQuote({author,text});
+        } catch (error) {  
             console.error(error);
         }
     };
