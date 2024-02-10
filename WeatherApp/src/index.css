@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* The CSS code `*,::before, ::after{ margin:0; padding:0; box-sizing: border-box; }` is a CSS reset or
+normalize code. It sets the margin and padding of all elements, as well as the box-sizing property,
+to ensure consistent and predictable styling across different browsers. */
+*,::before, ::after{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
